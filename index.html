@@ -7,17 +7,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="main.js"></script>
+    <style>
+    h3 {color:teal;}
+    .fontstyle1 {font-family: sans-serif;}
+    </style>
 </head>
+
 <body>
     <h1>I'm Really Important</h1>
     <img src="https://www.mercolocal.com/Assets/Images/Merchants/7031/Full%20Header/Large/Merchant_Ouray_Chamber_Resort_Association_Tours_Attractions__Events_Ouray_Colorado_Travel__Adventure_Banner_120520170644.jpg"
     alt="Ouray, Colorado">
 
-    <h2>Make a Submission</h2>
-    <form action="/submit-profile">
-        <input type="text" placeholder="Your LinkedIn URL">
-        <button type="submit">Submit</button>
-      </form>
-    
+    <div>
+        <h2 class="fontstyle1">Make a Submission</h2>
+        <form action="/submit-profile">
+            <input type="text" placeholder="Your LinkedIn URL" required>
+            <button type="submit">Submit</button>
+        </form>
+
+        <h3 class="fontstyle1">Choose Which Location You Prefer</h3>
+        <form>
+            <label for="Ouray"><input id="Ouray"
+            type="radio" name="Ouray-Telluride">Ouray</label>
+            
+            <label for="Telluride"><input id="Telluride"
+            type="radio" name="Ouray-Telluride">Telluride</label>
+        </form>
+
+        <h3 class="fontstyle1">Choose Your Favorite Activity</h3>
+        <form>
+            <label><input type="checkbox"
+            name="activity">Biking</label>
+            <label><input type="checkbox"
+            name="activity">Jeeping</label>
+            <label><input type="checkbox"
+            name="activity">Hiking</label>
+        </form>
+    </div>  
 </body>
 </html>
