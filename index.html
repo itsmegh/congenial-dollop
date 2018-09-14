@@ -7,22 +7,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="main.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+    
     <style>
-    h3 {color:teal;}
-    .fontstyle1 {font-family: sans-serif;}
+        h3 {color:teal;}
+
+        .fontstyle1 {font-family: Lobster, cursive;}
+
+        .fun-text {color:steelblue; font-size: 35px;}
+
+        .smaller-picture {width: 600px;}
+
+        .picture-border {border-color:slategray;
+            border-width: 10px;
+            border-style: groove;
+            border-radius: 10px;}
+
+        .form-background {background-color:peachpuff;
+            background-size: 50%}
     </style>
 </head>
 
 <body>
     <h1>I'm Really Important</h1>
     <img src="https://www.mercolocal.com/Assets/Images/Merchants/7031/Full%20Header/Large/Merchant_Ouray_Chamber_Resort_Association_Tours_Attractions__Events_Ouray_Colorado_Travel__Adventure_Banner_120520170644.jpg"
-    alt="Ouray, Colorado">
+    alt="Ouray, Colorado" class="smaller-picture picture-border">
 
-    <div>
-        <h2 class="fontstyle1">Make a Submission</h2>
+    <div class="form-background">
+        <h2 class="fontstyle1 fun-text">Make a Submission</h2>
         <form action="/submit-profile">
             <input type="text" placeholder="Your LinkedIn URL" required>
-            <button type="submit">Submit</button>
+            <button type="submit">Submit</button> 
         </form>
 
         <h3 class="fontstyle1">Choose Which Location You Prefer</h3>
